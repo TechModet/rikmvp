@@ -1,3 +1,4 @@
+/* General Styling */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +6,206 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #121212; /* Dark Background */
+  color: #ffffff; /* White Text */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Chatbox Styling */
+.chatbox {
+  background-color: #1e1e1e; /* Dark Grey Background */
+  color: #e0e0e0; /* Light Grey Text */
+  border: 1px solid #333; /* Border Color */
+  border-radius: 8px; /* Rounded Edges */
+  padding: 16px;
 }
+
+/* Input Field Styling */
+input {
+  background-color: #333; /* Darker Grey Background */
+  color: #e0e0e0; /* Light Grey Text */
+  border: 1px solid #555; /* Border Color */
+  border-radius: 8px; /* Rounded Edges */
+  padding: 10px; /* Padding */
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 250px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 10px;
+  height: 100vh; /* Full Height */
+}
+
+.sidebar h2 {
+  color: #ffffff;
+  text-align: center;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fa45b7; /* Custom Pink */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sidebar button:hover {
+  background-color: #ff65c7; /* Lighter Pink */
+}
+
+/* Sidebar Chat Items */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.sidebar li.active {
+  background-color: #333; /* Active Chat Highlight */
+}
+
+.sidebar li:hover {
+  background-color: #444; /* Hover State */
+}
+
+/* Three Dots Button */
+.sidebar li button {
+  background: transparent;
+  border: none;
+  color: #ccc;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.sidebar li button:hover {
+  color: #fff;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: absolute;
+  top: 40px; /* Position Below Button */
+  left: 10px; /* Align Left */
+  background: #1e1e1e; /* Dropdown Background */
+  border: 1px solid #333; /* Border Color */
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle Shadow */
+  z-index: 100; /* Ensure It Stays Above Other Elements */
+}
+
+.dropdown button {
+  display: block;
+  padding: 8px 12px;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  color: #ffffff; /* White Text */
+  cursor: pointer;
+}
+
+.dropdown button:hover {
+  background-color: #444; /* Hover State */
+}
+
+.dropdown button.delete {
+  color: #ff4d4d; /* Red for Delete */
+}
+
+.dropdown button.delete:hover {
+  background-color: #661d1d; /* Darker Red */
+}
+
+/* Chat Area Styling */
+.chat-area {
+  flex: 1;
+  padding: 20px;
+  background-color: #121212; /* Match Body Background */
+}
+
+.chat-area h1 {
+  text-align: center;
+  color: #ffffff; /* White Text */
+}
+
+.chat-area .chat-messages {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 10px;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.chat-area .chat-messages p {
+  margin: 5px 0;
+  color: #e0e0e0; /* Light Grey Text */
+}
+
+.chat-area .chat-messages .bot {
+  color: #fa45b7; /* Custom Pink for Bot */
+}
+
+.chat-area .chat-messages .user {
+  color: #ffffff; /* White for User */
+}
+
+/* Input Area */
+.input-area {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.input-area input[type="text"] {
+  flex: 1;
+  background-color: #333;
+  color: #ffffff;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.input-area label {
+  margin-left: 10px;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 8px;
+  background-color: #333;
+  color: #ffffff;
+}
+
+.input-area label:hover {
+  background-color: #444;
+}
+
+.input-area button {
+  background-color: #fa45b7; /* Custom Pink */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.input-area button:hover {
+  background-color: #ff65c7; /* Lighter Pink */
+}
+
